@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />  
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h2>Add new book to Library:</h2>
+    <div class="bookForm">
+        <div class="inputForm">
+            <div>
+                <label for="bookTitle">Book Title</label>
+                <input type="text" name="bookTitle" id="bookTitle"><br>  
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author"><br>
+            </div>
+            <div>
+                <label for="noPages">Number of Pages</label>
+                <input type="text" name="noPages" id="noPages"><br>
+            </div>
+            <div>
+                <label for="readorNot">Was this book read or not?</label><br>
+                <input type="radio" name="readorNot" id="Yes" value="Yes"><label for="Yes">Yes</label><br>
+                <input type="radio" name="readorNot" id="No" value="No"><label for="No">No</label><br>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit New Book</button>
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Number of Pages</th>
+            <th>Read or Not</th>
+            <th>Remove</th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+</body>
+</html>
